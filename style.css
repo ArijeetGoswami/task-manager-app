@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    background-color: #58c628;
+    margin-top: 90px;
+   
+}
+
+.manager-view{
+    width: 50%;
+    height: 70%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.manager-view .task-input{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+    
+}
+
+.manager-view .task-input input{
+    width:80%;
+    height: 30px;
+    padding: 5px;
+}
+
+.manager-view .task-input button{
+    border-radius: 5px;
+    padding: 5px 10px; 
+    background-color:rgb(22, 22, 185);
+    color: white;
+    font-weight: bold;
+    font-size: 15px; 
+}
+
+.manager-view .task-input button:hover{
+    background-color: rgb(155, 129, 36);
+    cursor: pointer;
+}
+
+
+ul {
+    background-color: #6c5c5c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    max-height: 300px;      
+      max-height: 300px;        /* fixed height for scroll area */
+    overflow-y: auto;         /* enable vertical scroll */
+    scroll-snap-type: Y mandatory;
+}
+
+li{
+    font-size: 30px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;           
+    scroll-snap-align: start;
+
+   
+}
+
+
+
+
+
+
